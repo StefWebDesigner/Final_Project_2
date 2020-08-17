@@ -1,0 +1,350 @@
+/* ===Viewport 386 px=== */
+
+* {
+    
+
+    /* ---Font Order--- */
+    font-family: 'Roboto', sans-serif;
+
+    /*---boxing format--- */
+    box-sizing: border-box;
+
+    /* Main-background */
+    opacity: 1;
+    }
+
+   .main-background {
+    background-image: url(../images/mesh.png);
+
+   } 
+    
+    /* ===== Main Elememts ===== */
+    
+    body {
+    
+        margin: 0 auto;
+    }
+    
+    p {
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    p, 
+    h2 {
+        text-shadow: 0 1px black;
+    }
+    
+    img {
+        box-shadow: 3px 3px grey;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
+    
+    /* =====Header==== */
+    
+    /* ---Header Elements--- */
+    .profile-picture {
+    
+        border-radius: 87px;
+        border: 1px solid;
+        height: 250px;
+        width: 65% auto; 
+        max-width: 320px;
+        text-align: center;
+        box-shadow: 3px 3px grey; 
+    }
+    
+    .main-name {
+        padding-top: 10px;
+    }
+    
+    /* ----Header Countainer---- */
+    
+    .header-wrapper {
+        background-color: #b3c6ff;
+        text-align: center;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto; 
+        box-shadow: 3px 3px grey; 
+    }
+    
+    /*---- Navigation---- */
+    
+    li, 
+    .main-nav a {
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        width: 99%;
+        box-shadow: 1px 1px grey; 
+        margin: 0 auto;
+    }
+    
+
+    .main-nav li {
+    
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+     /*A little hover effect over nav menu */
+    .main-nav li:hover {
+        opacity: 1;
+    }
+    
+    .header-wrapper .main-nav li {
+    
+        background-color: white; 
+        margin-bottom: 5px;
+    } 
+    
+    /* ==== Main ====== */
+    
+    /* ---Main elements---- */
+    
+    .col img {
+        max-width: 100%;
+    
+    box-shadow: 3px 3px grey; 
+    }
+    
+    
+    /* ----Main Container---- */
+    .main-container {
+        margin: 0 auto;
+        max-width: 1024px;
+        padding-bottom: 20px;
+    }
+    
+    .col {
+        display: block;
+        margin: 20px 10px;
+        max-width: 100%;
+        color: black;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-top: 5px;
+    }
+
+    /* === Skill === */
+
+    /* --- Skill Contianer --- */
+
+    .skill-wrapper {
+        margin: 0;
+        width: 95%;
+        text-align: center;
+    }
+    
+    /* ====Footer==== */
+    
+    /* ---Fiotter Elements--- */
+
+    .footer-wrapper h2 {
+        padding-top: 10px;
+    }
+
+    .footer-p {
+        color: blue;
+    }
+
+    
+    /* ---footer container---- */
+    .footer-wrapper {
+        background-color: #b3c6ff;
+        text-align: center;
+        max-width: 1100px;
+        height: auto;
+        margin: 0 auto;  
+        box-shadow: 3px 3px grey; 
+    }
+    
+    .footer-bottom {
+        background-color: #b3c6ff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1100px;
+    }
+    .footer-bottom ul,
+    .footer-bottom li,
+    .footer-bottom a {
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        box-shadow: none;
+    }
+    
+    .footer-student li {
+        float: left;
+    }
+    
+    .footer-top a {
+        float: right;
+    }
+    
+    /* ===Clear Fixes=== */
+    
+    .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+    
+    /* ===Media Query===*/
+    
+    /* ====768px Viewport=== */
+    
+    /* ===Header==== */
+    
+    @media (min-width: 768px) {
+    
+    .header-wrapper {
+        width: 768px;
+        max-width: 90%;
+    }
+    
+    li, 
+    .main-nav a {
+        display: inline;
+        width: 98%;
+    }
+    
+    .header-wrapper .main-nav li {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-left: 25px;
+        background-color: white; 
+        box-shadow: none; 
+    }
+
+    .about_me_info {
+        float: left;
+        width: 62%;
+        padding-top: 40px;
+        text-shadow: none; 
+    }
+    
+    .profile-picture {
+        float: right;
+        padding: 60px 75px 10px 0px;
+        border-radius: 0px;
+        border: 0;
+        box-shadow: 0px 0px; 
+        height: 240px;
+                background-attachment: fixed;
+
+    }
+    
+    /* ---Main Elements--- */
+    
+    .col img {
+        box-shadow: 3px 3px grey; 
+        }
+
+    .name-portfolio {
+        padding-top: 15px;
+
+    }
+    
+        /*---Main Containers---*/
+    
+    .col {
+        float: left;
+        width: calc(50% - 20px);
+        /* margin-bottom: 120px; */
+        min-height: 425px;
+        }
+    
+    
+     
+    }
+    
+    /* =====THINGS TO REVISE=== */
+    /* how to get rid of the shadow box completely */
+    /* Move the picture and header stuff */
+    /* have a max width */
+    
+    
+    @media (min-width: 1024px) {
+    
+    /* ====Header==== */
+
+    /* ---Header Elements--- */
+
+    .main-name {
+        padding-left: 5%;
+        float: left;
+    }
+
+    .main-nav {
+        padding-right: 5%;
+        float: right;
+        position: relative;
+    }
+
+    .about_me_info {
+        width: 70%;
+        float: left;
+        padding-top: 45px;
+        padding-right: 20%;
+        margin-bottom: 20px;
+    }
+
+    .profile-picture { /*need to put it in a higher rank & add the bottom function to it*/
+        
+        background-attachment: fixed;
+        position: fixed;
+        top: 3%;
+        left: 80%;
+        height: 225px;
+        
+    }
+
+    .main-name {
+        padding-top: 0px;
+        font-size: 40px;
+    }
+
+
+    /* ---Header Containers--- */
+    
+        .header-wrapper {
+            width: 1024px;
+            max-width: 1024px;
+            margin: 0 auto;
+            box-shadow: 3px 3px grey; 
+        }
+    
+        .header-wrapper .main-nav li {
+            background-color: white; 
+            margin-bottom: 5px;
+            box-shadow: none; 
+        } 
+
+        /* ====Main Content=== */
+    
+        .col {
+            width: calc(33.333% - 20px);
+            min-height: initial;
+        }
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
